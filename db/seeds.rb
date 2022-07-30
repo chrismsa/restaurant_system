@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+puts '----------------------------------foods----------------------------------'
 foods = [
   {
     name: 'Galinhada',
@@ -26,6 +27,7 @@ foods = [
 
 Food.create!(foods)
 
+puts '---------------------------------events----------------------------------'
 events = [
   {
     name: 'Galinhada da igreja do tio zé',
@@ -42,3 +44,6 @@ events = [
 ]
 
 Event.create!(events)
+
+
+puts '-----------------------------generated seed------------------------------'

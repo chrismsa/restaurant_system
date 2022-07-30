@@ -22,3 +22,34 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+sudo apt install postgresql postgresql-contrib
+
+service postgresql status
+12/main (port 5432): online
+
+sudo service postgresql start
+
+pg_lsclusters
+Ver Cluster Port Status Owner    Data directory              Log file
+12  main    5432 online postgres /var/lib/postgresql/12/main /var/log/postgresql/postgresql-12-main.log
+
+sudo pg_ctlcluster 12 main start
+
+bundle i
+
+rake db:setup
+FATAL:  role "User" does not exist 
+
+sudo -u postgres psql
+postgres=# create role user login createdb;
+postgres=# \q
+
+rake db:setup
+
+
+
+rake db:migrate:reset
+
+rake db:seed
