@@ -53,3 +53,9 @@ rake db:setup
 rake db:migrate:reset
 
 rake db:seed
+
+if bootstrap not work
+rails javascript:install:esbuild
+rails css:install:bootstrap
+
+./bin/dev
