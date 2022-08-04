@@ -12,6 +12,15 @@
   </head>
 
   <body>
+    <div id=flash>
+      <%= render partial: 'layouts/flash' %>
+    </div>
+
+    <%= button_to 'Logout',
+      destroy_user_session_path,
+      method: :delete,
+      class: "btn btn-danger"%>
+
     <%= yield %>
   </body>
 </html>
