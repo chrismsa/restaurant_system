@@ -76,7 +76,7 @@
   flex-direction: column;
   /* width: 50%; */
   height: 755px;
-  left: 180px;
+  left: 181px;
   /* top: 200px; */
   padding: 164px 0px;
   /* margin-top: 25%; */
@@ -86,10 +86,33 @@
 
 .title {
   position: relative;
-  /* width: 138px; */
-  /* height: 56px; */
   left: -165px;
-  /* top: 72px; */
+
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: 400;
+
+  color: #661100;
+}
+
+/* REGISTER */
+
+.title_register {
+  position: relative;
+  left: -105px;
+
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: 400;
+
+  color: #661100;
+}
+
+/* FORGET */
+
+.title_forget {
+  position: relative;
+  /* left: -105px; */
 
   font-family: 'Roboto';
   font-size: 48px;
@@ -118,27 +141,51 @@ input[type="password" i] {
   width: 480px;
 }
 
-/* login_bnt */
-
 input[type="submit" i] {
-  position: relative;
-  margin-top: 20px;
-  min-width: 270px;
-  /* padding: 10px 10px; */
-
   background: linear-gradient(87.79deg, #AD1B13 0%, #E6655E 100%);
   box-shadow: 0px 10px 20px rgb(208 73 65 / 75%);
   border-radius: 10px;
 
-  /* text-align: center; */
-  font-family: 'Roboto';
-  font-size: 32px;
   font-weight: 300;
   color: #e9dbd9;
+}
 
-  -webkit-appearance: none;
-  -moz-appearance:    none;
-  -ms-appearance:     none;
-  -o-appearance:      none;
-  appearance:         none;
+/* btns */
+
+.login_bnt {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 40%;
+  /* min-width: 270px; */
+
+  font-family: 'Roboto';
+  font-size: 32px;
+}
+
+.register_bnt {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 31%;
+  /* min-width: 270px; */
+
+  font-family: 'Roboto';
+  font-size: 32px;
+}
+
+.forget_bnt {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 13%;
+  /* min-width: 270px; */
+
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+
+/* links */
+
+.links {
+  padding-top: 25px;
+
+  text-align: center;
 }

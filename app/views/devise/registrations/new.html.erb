@@ -1,18 +1,43 @@
-<h2><%= t('.sign_up', :default => "Sign up") %></h2>
+<div class="login screen">
+  <div class="login_background">
+    <div class="left">
+      <%= image_tag 'logo_500.png', class: 'login_logo' %>
+      <div class="res">
+        R<br />E<br />S<br />T<br />A<br />U<br />R<br />A<br />N<br />T<br /><br />S<br />Y<br />S<br />T<br />E<br />M
+      </div>
+    </div>
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+    <div class="right">
+      <h2 class="title_register">
+        <%= t('.sign_up', :default => "Sign up") %>
+      </h2>
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
+      <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+        <div>
+          <% f.label :email %><br />
+          <%= f.email_field :email, placeholder: " youremail@email.com" %>
+        </div>
 
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
+        <div>
+          <% f.label :password %><br />
+          <%= f.password_field :password, placeholder: " password" %>
+        </div>
 
-  <div><%= f.submit t('.sign_up', :default => "Sign up") %></div>
-<% end %>
+        <div>
+          <% f.label :password_confirmation %><br />
+          <%= f.password_field :password_confirmation, placeholder: " password" %>
+        </div>
 
-<%= render "devise/shared/links" %>
+        <div class="register_bnt">
+          <%= f.submit t('.sign_up', :default => "Sign up") %>
+        </div>
+      <% end %>
+
+      <div class="links">
+        <%= render "devise/shared/links" %>
+      </div>
+    </div>
+  </div>
+</div>
